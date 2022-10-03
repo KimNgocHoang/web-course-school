@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="JavaScript">
+            function SelectID()
+            {
+                s=document.form1.txtbox.value
+                document.form1.lstbox.selectedIndex=s
+                document.form1.txtbox.focus()
+            }
+
+        </script>
+    </head>
+    <body onload="document.form1.txtbox.focus()">
+        <form name="form1">
+            <select name="lstbox">
+                <option>Index 0</option>
+                <option>Index 1</option>
+                <option>Index 2</option>
+                <option>Index 3</option>
+            </select>
+            <input type="text" name="txtbox" size=5>
+            <input type="button" value="Click" onclick="SelectID()">
+        </form>
+    </body>
+    
+</html>

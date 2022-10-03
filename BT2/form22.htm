@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <script language="JavaScript">
+            function AddSalary(s)
+            {
+                with(this) {salary = s;}
+            }
+            function Info(name, age, cccd)
+            {
+                this.name =name;
+                this.age=age;
+                this.cccd=cccd;
+                this.salary=0;
+                this.AddSalary=AddSalary;
+            }
+            
+        </script>    
+    </head>
+    <body>
+        <script language="JavaScript">
+            var MyInfo = new Info("Hoang Kim Ngoc", "20", "201840921");
+            MyInfo.AddSalary(1000);
+            document.write("Info name is: " + MyInfo.name + "<br>");
+            document.write("Info age is: " + MyInfo.age + "<br>");
+            document.write("Info cccd is: " + MyInfo.cccd + "<br>");
+            document.write("Info salary is: " + MyInfo.salary + "<br>");
+        </script>
+    </body>
+</html>

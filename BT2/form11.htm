@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="JavaScript">
+            function login()
+            {
+                if(document.form1.un.value=="" || document.form1.pw.value=="")
+                {
+                    alert("Vui long nhap day du thong tin");
+                }
+                else alert("Dang nhap thanh cong");
+            }
+        </script>
+    </head>
+    <body bgcolor="#AABBCC">
+        <div align="center">
+            <form name=form1 method="get/post">
+                <table border="0">
+                    <caption>Login</caption>
+                    <tr>
+                        <th>Usename &emsp;</th>
+                        <th><input type= text name=un></th>
+                    </tr>
+                    <tr>
+                        <th>Password &emsp;</th>
+                        <th><input type= password name=pw></th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <input type=button name=b1 value="OK" onclick="login()">
+                            <input type=reset name=r1 value="Reset">
+                        </th>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
